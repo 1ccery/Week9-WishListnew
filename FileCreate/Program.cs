@@ -9,7 +9,7 @@ namespace FileCreate
             string rootDirectory = @"C:\Users\opilane\samples\wishlist";
             Console.WriteLine("Enter file name");
             string fileName = Console.ReadLine();
-            string fullfilePath = $@"{rootDirectory}\{fileName}.pdf";
+            string fullfilePath = $@"{rootDirectory}\{fileName}.txt";
             bool directoryExists = Directory.Exists(rootDirectory);
             bool fileExists = File.Exists(fullfilePath);
             if (directoryExists && fileExists)
